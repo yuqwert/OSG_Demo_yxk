@@ -1,0 +1,16 @@
+//////////////////////////////////////////////////////////////////////////
+//	尝试自己建一个GraphicsWidgetQt类
+//////////////////////////////////////////////////////////////////////////
+
+#include "osgwindow.h"
+#include <QtGui/QApplication>
+
+
+int main(int argc, char *argv[])
+{
+	QApplication a(argc, argv);
+
+	OSGWindow w;
+	w.show();
+	return a.exec();
+}

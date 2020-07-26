@@ -1,0 +1,18 @@
+<map name="Global" type="geocentric" version="1.0" >
+    <!--全球影像图-->
+    <image name="GlobeImage" driver="gdal">
+        <url>../data/image/global.tif</url>
+    </image>
+
+    <!--全球高程图-->
+    <heightfield name="GlobeHeightfield" driver="gdal">
+        <url>../data/heightfield/30m.tif</url>
+    </heightfield>
+
+    <!--文件缓存-->
+    <options>
+        <cache type="sqlite3">
+            <path>./FileCache</path>
+        </cache>
+    </options>
+</map>
